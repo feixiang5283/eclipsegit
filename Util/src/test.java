@@ -11,7 +11,7 @@ public class test {
 
 	public static void main(String[] args) throws ParseException {
 		// TODO Auto-generated method stub
-		String fileName = "D:/workdoc/ÈÎÎñ/2017Äê¿¨ĞÅÏ¢/20180416²âÊÔ¿¨/Â·Ïß/UĞÎ/11112223334.txt";  
+		String fileName = "D:/workdoc/ä»»åŠ¡/2017å¹´å¡ä¿¡æ¯/20180416æµ‹è¯•å¡/è·¯çº¿/Uå½¢/1.txt";  
         //readFileByBytes(fileName);  
         //readFileByChars(fileName);  
         //readFileByLines(fileName);  
@@ -25,13 +25,13 @@ public class test {
 	        File file = new File(fileName);  
 	        BufferedReader reader = null;  
 	        try {  
-	            System.out.println("ÒÔĞĞÎªµ¥Î»¶ÁÈ¡ÎÄ¼şÄÚÈİ£¬Ò»´Î¶ÁÒ»ÕûĞĞ£º");  
+	            System.out.println("ä»¥è¡Œä¸ºå•ä½è¯»å–æ–‡ä»¶å†…å®¹ï¼Œä¸€æ¬¡è¯»ä¸€æ•´è¡Œï¼š");  
 	            reader = new BufferedReader(new FileReader(file));  
 	            String tempString = null;  
 	            int line = 1;  
-	            // Ò»´Î¶ÁÈëÒ»ĞĞ£¬Ö±µ½¶ÁÈënullÎªÎÄ¼ş½áÊø  
+	            // ä¸€æ¬¡è¯»å…¥ä¸€è¡Œï¼Œç›´åˆ°è¯»å…¥nullä¸ºæ–‡ä»¶ç»“æŸ  
 	            while ((tempString = reader.readLine()) != null) {  
-	                // ÏÔÊ¾ĞĞºÅ  
+	                // æ˜¾ç¤ºè¡Œå·  
 	                System.out.println("line " + line + ":"+Integer.toHexString(tempString.length()/8)+", "+ tempString);  
 	                line++;  
 	            }  
@@ -50,7 +50,7 @@ public class test {
 
 			
 	/*
-	 * ½«Ê±¼ä×ª»»ÎªÊ±¼ä´Á
+	 * å°†æ—¶é—´è½¬æ¢ä¸ºæ—¶é—´æˆ³
 	 */
 	public static String dateToStamp(String s) throws ParseException {
 		String res;
@@ -63,7 +63,7 @@ public class test {
 	}
 	
 	 /* 
-     * ½«Ê±¼ä´Á×ª»»ÎªÊ±¼ä
+     * å°†æ—¶é—´æˆ³è½¬æ¢ä¸ºæ—¶é—´
      */
     public static String stampToDate(String s){
         String res;
@@ -75,11 +75,11 @@ public class test {
     }
 
 	 public static String res(String ooto){
-		// '2017645160','À¶¶õM8Q75','10401','2018/3/1 00:03:45','10507','2018/3/2 00:14:05','011FA12800034BCDA12800060000000072179289707F6C05721643F0707D6BC8707D6AA5707D6A43707A68E5707A3EF9707A3F35707A3F37707A40A872153F9B721B893D721B648D7213376671765E58000000007071703B72128874717D536971102CBB71102D4771102DB67110272771123977711239F07112386971123A7C711287EB7112AC6E707362FE',''
+		// '2017645160','è“é„‚M8Q75','10401','2018/3/1 00:03:45','10507','2018/3/2 00:14:05','011FA12800034BCDA12800060000000072179289707F6C05721643F0707D6BC8707D6AA5707D6A43707A68E5707A3EF9707A3F35707A3F37707A40A872153F9B721B893D721B648D7213376671765E58000000007071703B72128874717D536971102CBB71102D4771102DB67110272771123977711239F07112386971123A7C711287EB7112AC6E707362FE',''
 		 String time = SetSystemProperty.readValue("","time");
 		 String res = "";
 		 String cardId = SetSystemProperty.readValue("","cardId");
-		 String vehicle = "À¶¶õAM8Q75";
+		 String vehicle = "è“é„‚AM8Q75";
 		 String entryId = "10000";
 		 String entryTime = stampToDate(time);
 		 String exitId = "10000";
