@@ -11,7 +11,7 @@ public class test {
 
 	public static void main(String[] args) throws ParseException {
 		// TODO Auto-generated method stub
-		String fileName = "D:/workdoc/任务/2017年卡信息/20180416测试卡/路线/U形/1.txt";  
+		String fileName = "D:/workdoc/任务/2017年卡信息/20180416测试卡/路线/U形/145.txt";  
         //readFileByBytes(fileName);  
         //readFileByChars(fileName);  
         //readFileByLines(fileName);  
